@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="css/app.css">
+    <title>Login-page</title>
+</head>
+<body class="body">
+    <header class="page-header">
+       <h1> Mon compte </h1>
+    </header>
+    <section class="login-container">
+        <section class="image">
+        </section>
+        <section class="login">
+            <header class="login-title">
+                Indetification
+            </header>
+            <form class="login-form">
+                <div class="input-group">
+                    <label for="user_login">identifiant<span>*</span></label>
+                    <div class="div">
+                        <span class="fas fa-user"></span>
+                        <input type="text" id="user_login" name="user_login">
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label for="user_password">Mot de passe<span>*</span></label>
+                    <div class="div">
+                        <span class="fas fa-lock"></span>
+                        <input type="password" name="user_password" id=user_password>
+                        <span class="fas fa-eye" id="password-icone"></span>
+                    </div>
+                </div>
+                <div class="lost">
+                    <a href="#">Mot de passe oublié </a>
+                </div>
+                <div class="submit">
+
+                    <input type="submit" value="Indetifiez-vous">
+                </div>
+                <div class="lost">
+                    <a href="#">Aide à la connexion </a>
+                </div>
+            </form>
+        </section>
+    </section>
+    <script src="js/app.js"></script>
+</body>
+</html>

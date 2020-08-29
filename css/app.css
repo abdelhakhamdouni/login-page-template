@@ -1,0 +1,154 @@
+.body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(#107702, rgb(240, 241, 156) );
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.page-header{
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:2em;
+    font-weight: 900;
+    color: whitesmoke;
+}
+.login-container{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    
+
+}
+.image{
+    order: 2;
+    width: 400px;
+    background-image: url("../images/giraffe.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.login{
+    order: 1;
+    height: 70vh;
+    width: 400px;
+    border: 1px solid whitesmoke;
+    background-color: #ecf1f8;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.login-title{
+    position: relative;
+    height: 10%;
+    font-size: 1.8em;
+    color: #0a4bad;
+    font-weight: 900;
+    text-transform: uppercase
+}
+.login-title::after{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color:  #0a4bad;
+    height: 3px;
+    width: 35%;
+}
+.login-form{
+    height: 65%;
+    padding: 0 15px;
+}
+.input-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 15px 0;
+}
+.input-group div {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border: 1px solid #0a4bad;
+    padding: 5px;
+}
+.input-group div input{
+     flex-grow : 1;
+    border: none;
+    border-left: 1px solid #a5a3a3;
+    background-color: transparent;
+    padding: 5px 10px;
+    margin-left: 3px;
+}
+.input-group div input:active, .input-group div input:focus{
+    border-left: 1px solid #a5a3a3;
+    outline: 0;
+}
+.input-group div span{
+    font-size: 1.1em;
+    color: gray;
+    margin-right: 5px;
+}
+.input-group label{
+    display: inline-block;
+    width: 100%;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+.input-group label span{
+    color: red
+}
+.lost{
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 1.2em;
+    color: #0a4bad;
+    text-decoration: underline;
+
+}
+.lost a:hover{
+    font-weight: 500;
+    color: rgb(17, 117, 121)
+}
+.submit{
+    width: 100%;
+    text-align: center;
+}
+input[type=submit]{
+    border: none;
+    padding: 8px;
+    font-size: 1.8em;
+    font-weight: 700;
+    background-color: #0a4bad;
+    color: whitesmoke;
+}
+
+@media (max-width: 778px){
+    .image{
+        display: none;
+    }
+    .page-header{
+        font-size: 1.5em;
+    }
+    .login{
+        width: 100%;
+        height: 80vh;
+    }
+}
